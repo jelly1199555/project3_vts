@@ -79,7 +79,7 @@ $(function(){
 <tr><td>출연자  </td><td>왕가위, 왕조위</td></tr>
 <tr><td>가격     </td><td>23000원</td></tr>
 <tr><td></td></tr>
-<tr  id="reservation"><td colspan=2>> 예매하기    </td></tr>
+<tr  id="reservation"><td colspan=2 onclick="alert('공연예정작입니다');">> 예매하기    </td></tr>
 </table>
 
 <br><br><br><br><br>

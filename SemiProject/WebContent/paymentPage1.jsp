@@ -64,7 +64,7 @@ ArrayList<Vts_showVO> tiArray = tidao.getAllInfo(); //DAO, 전체출력을 위해
 		</table>
 	</td>
 	<td>
-	<form action="" method="get" name="form1" id="form1" accept-charset='UTF-8'>
+	<form action="" method="get" name="form1" id="form1" accept-charset='UTF-8' >
 	<table border=0 width=300 height=500>
 			<tr><td height=10%><h3>선택사항</h3></td></tr>
 			<tr><td height=12%>관람일자</td></tr>

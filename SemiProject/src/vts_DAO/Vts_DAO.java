@@ -5,7 +5,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Date;
 
 import vts_Conn.Vts_Conn;
 import vts_VO.Vts_memVO;
@@ -144,4 +143,54 @@ public class Vts_DAO {
 		}
 		return tiarray3;
 	}
+	public boolean memInsert(String id, String pw, String name, String gender, String tel, String birth, String address,
+			String email) {
+		
+		String sql = "insert into vtsmember_table values(?,?,?,?,to_date(?,'YYYY-MM-DD'),?,?,?)";
+		
+		try {
+			pstmt = con.prepareStatement(sql);
+			pstmt.setString(1, id);
+			pstmt.setString(2, pw);
+			pstmt.setString(3, name);
+			pstmt.setString(4, gender);
+			pstmt.setString(5, birth);
+			pstmt.setString(6, email);
+			pstmt.setString(7, tel);
+			pstmt.setString(8, address);
+			pstmt.executeUpdate();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			System.out.println("insert error");
+			return false;
+		}
+		// TODO Auto-generated method stub
+		return true;
+	}
+	public boolean login(String id, String pw) throws SQLException {
+		// TODO Auto-generated method stub
+		
+		String sql = "select vts_id, vts_pw from vtsmember_table";
+		
+		pstmt = con.prepareStatement(sql);
+		rs = pstmt.executeQuery();
+		
+		int sw = 0;
+		
+		while(rs.next()) {
+			String dbid = rs.getString("vts_id");
+			String dbpw = rs.getString("vts_pw");
+			if(id.equals(dbid) && pw.equals(dbpw)) {
+				sw = 1;
+			}
+		}
+		if(sw ==1)
+			return true;
+		else			
+			return false;
+	}
+
+	
+	
 }

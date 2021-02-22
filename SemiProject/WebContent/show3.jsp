@@ -81,7 +81,7 @@ $(function(){
 <tr><td>출연자  </td><td>MC 유리 , 베스트카 차주</td></tr>
 <tr><td>가격     </td><td>6500원</td></tr>
 <tr><td></td></tr>
-<tr  id="reservation"><td colspan=2>> 예매하기    </td></tr>
+<tr  id="reservation"><td colspan=2 onclick="alert('공연예정작입니다');">> 예매하기    </td></tr>
 </table>
 
 <br><br><br><br><br>
