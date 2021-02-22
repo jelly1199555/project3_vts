@@ -1,0 +1,157 @@
+@charset "EUC-KR";
+
+/* *{	
+	color: white;
+	margin :0;
+	padding:0;
+	background-color : black;
+	
+} */
+* {margin:0; padding:0;}
+
+ul li {list-style:none;}
+
+.clearfix:after{content:'';display:block; clear:both;}
+
+body {background:white; overflow:scroll; padding-top:100px; 
+}
+
+header {	
+	margin-top:20px;
+	background:linear-gradient(white 50px, rgba(255,255,255,0.8) 50px, rgba(255,255,255,0.8) );
+	height:50px;
+	overflow:hidden;
+	position:absolute;
+	left:0; right:0;
+	top:0;
+}
+
+
+nav {width:960px; margin:0 auto;}
+nav > ul > li {float:left; line-height:50px; margin-right:40px;}
+nav > ul > li ul{ width:100%;}
+
+
+img{
+	width : 300px;
+	height : 400px;
+	align : center;
+}
+
+section{
+	margin-left:150px;
+	float : left;
+width : 30%;
+height:300px;
+
+}
+
+nav{
+	
+	margin-right:50px;
+	float : right;
+width:50%;
+height : 300px;
+}
+
+
+h1{ 
+	margin-left:150px;
+	font-size : 30px;
+	margin-bottom : 20px;
+}
+
+table{
+	
+	width :300px;
+	height : 280px;
+	margin-top : 40px;
+}
+
+.content{
+	width:900px;
+}
+
+
+/* ÆË¾÷Ã¢ */
+
+.pop{
+	background-color : ##FCF6F5;
+}
+
+#popimg{
+	height : 297px;
+	width : 400px;
+}
+
+/* ¸Þ´º */
+/* body {background:white; overflow-y:scroll;padding-top:100px;}
+
+header {	
+	margin-top:20px;
+	background:linear-gradient(white 50px, rgba(255,255,255,0.8) 50px, rgba(255,255,255,0.8) );
+		height:50px;
+		overflow:hidden;
+	position:absolute;
+	left:0; right:0;
+	top:0;
+}
+
+
+nav {width:960px; margin:0 auto;}
+nav > ul > li {float:left; line-height:50px; margin-right:40px;}
+nav > ul > li ul{ width:100%;} */
+
+
+/* body */
+
+/* img{
+	width : 300px;
+	height : 400px;
+	align : center;
+}
+
+section{
+	margin-left:150px;
+	float : left;
+width : 30%;
+height:300px;
+}
+
+aside{
+	margin-right:50px;
+	float : right;
+width:50%;
+height : 300px;
+}
+
+.detail-body{
+	color : white;
+}
+
+h1{
+	margin-left:150px;
+	font-size : 30px;
+	margin-bottom : 20px;
+}
+
+table{
+	width :300px;
+	height : 280px;
+	margin-top : 40px;
+}
+
+.detail{
+	width:900px;
+} */
+
+
+
+
+
+
+
+
+
+
+ 

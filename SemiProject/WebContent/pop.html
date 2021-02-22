@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="./jquery-3.5.1.js"></script>
+<script>
+window.onunload=function(){
+	kajaCookie();
+}
+function kajaCookie(){ 
+	
+	if(document.f1.chk1.checked == true){ 
+		
+		var oneul1 = new Date() 
+		oneul1.setDate(oneul1.getDate()+1) 
+		document.cookie = "annaeCookie=kongji1;expires=" 
+		                    + oneul1.toUTCString()
+		                    
+	}//if-end
+}//kajacookie()-end
+
+</script>
+
+<style>
+*{
+	background : #e2e2e2;
+	color : black;
+	margin : 0;
+	padding : 0;
+}
+
+#popimg{
+	height : 350px;
+	width : 320px;
+}
+</style>
+
+</head>
+<body>
+<div >
+<a href="detail/show3.jsp" target="_blank">
+<img src = "images/popup.jpg" id="popimg"></a>
+
+<form name="f1">
+<input type="checkbox" name="chk1">
+오늘 그만보기
+</form>
+</div>
+
+</body>
+</html>
